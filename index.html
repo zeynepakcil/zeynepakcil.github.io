@@ -5,11 +5,8 @@
 <head>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() {dataLayer.push(arguments);}
     gtag("js", new Date());
-
     gtag("config", "G-YMWDE0VTD3");
   </script>
   <meta charset="UTF-8" />
@@ -26,78 +23,53 @@
   <meta property="og:title" content="Zeynep Akcil | Portfolio" />
   <meta property="og:description"
     content="Hi! My name is Zeynep. I'm a senior electrical electronics engineering student. Visit and know about me & my projects/designs." />
-
   <meta property="og:url" content="https://zeynepakcil.github.io/" /> 
   <meta property="og:site_name" content="Zeynep Akcil Portfolio" />
-
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@zeynepkcil" />
   <meta name="twitter:title" content="Zeynep Akcil | Portfolio" />
   <meta name="twitter:description"
-  content="Hi! My name is Zeynep. I'm a senior electrical electronics engineering student. Visit and know about me & my projects/designs." />
-  <meta name="twitter:image" content="https://zeynepakcil.github.io/src/png/Preview-card-min.png" /> <!-- ********************* -->
+    content="Hi! My name is Zeynep. I'm a senior electrical electronics engineering student. Visit and know about me & my projects/designs." />
+  <meta name="twitter:image" content="https://zeynepakcil.github.io/src/png/Preview-card-min.png" /> 
   <title>Zeynep Akcil | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  <!-- aos cdn -->
+  <link rel="stylesheet" href="style.css" />  <!-- stylesheet -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
-
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
-
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="zeynep akcil logo">
-        <div class="logo-top">
-          <img src="src/png\IMG_8124-removebg-preview.png" alt="animation-head" id="nav-avatar"/>
+  <body class="body">
+    <audio loop="" id="audioPlayer" style="display: none">
+      <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+    </audio>
+    <div id="preloader"></div>
+    <noscript>Allow Javascript</noscript>
+    <header>
+      <div class="cursor-inner" id="cursor-inner"></div>
+      <div class="cursor-outer" id="cursor-outer"></div>
+      <div class="navbar" id="navbar">
+        <div class="hey">Hey!</div>
+        <div class="logo" tabindex="0" aria-label="zeynep akcil logo">
+          <div class="logo-top"><img src="src/png\IMG_8124-removebg-preview.png" alt="animation-head" id="nav-avatar"/></div>
+        </div>
+        <div class="navbar-tabs" id="navbar-tabs">
+          <ul class="navbar-tabs-ul">
+            <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+              <a href="#home" tabindex="0" aria-label="Home menu button">&#60;/Home&#62;</a>
+            </li>
+              <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+              <a href="#about" aria-label="about menu button">&#60;/AboutMe&#62;</a>
+            </li>
+              <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+              <a href="#skills" aria-label="skills menu button">&#60;/Skills&#62;</a>
+            </li>
+            <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+              <a href="#projects" aria-label="projects menu button">&#60;/Projects&#62;</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
-
+    </header>
   <main>
-    <!-- hamburger -->
     <div class="hamburger" id="hamburger" data-aos="fade">
       <div class="hamburgerbase">
         <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
@@ -107,37 +79,25 @@
         </button>
       </div>
     </div>
-    <!-- hamburger -->
     <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
         <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
+          <a href="#home" tabindex="0" aria-label="Home menu button">&#60;/Home&#62;</a>
         </li>
-
         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
+          <a href="#about" tabindex="0" aria-label="about menu button">&#60;/AboutMe&#62;</a>
         </li>
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
+          <a href="#skills" tabindex="0" aria-label="skills menu button">&#60;/Skills&#62;</a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
+          <a href="#projects" tabindex="0" aria-label="projects menu button">&#60;/Projects&#62;</a>
         </li>
       </ul>
     </div>
-    <!-- mobile toggle menu ends -->
 
     <section class="landing-page-container" id="home">
       <div class="blob"></div>
-
       <div class="text-content">
         <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
           <p class="jello">H</p>
@@ -208,90 +168,50 @@
             <button class="letsTalkBtn">
               <p class="letsTalkBtn-text">contact me</p>
               <span class="letsTalkBtn-BG"></span>
-            </button></a>
+            </button>
+          </a>
           <div class="setting-container" id="setting-container">
             <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0" aria-label="settings for sound and appearance"></label>
             <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
               <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label>
             </div>
-
             <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
               <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound" class="needtobeinvert"></label>
             </div>
           </div>
-          <!-- setting div ends -->
         </div>
-        <!-- contact-btn-div -->
       </div>
-     
     </section>
-    <!-- landing page ends here -->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">&#60;/AboutMe&#62;</h2>
           <p class="sectionHeadingP"></p>
         </div>
-
         <div class="info-dp-section">
           <div class="about-info">
-          <p tabindex="0">
-            Hey, I’m Zeynep. I’m a fourth-year Electrical and Electronics Engineering student at Bilkent University in Turkey. I ranked 71st out of 3 million people on university entrance exam, and I study here on a full scholarship.
-          </p>
-          <br />
-          <p tabindex="0">
-            I love working on <b>VLSI and hardware design</b> for acceleration.
-          </p>
-          <br />
-          <p tabindex="0">
-            Currently, I’m an undergraduate researcher in Alkan Lab, focusing on hardware-software co-optimization and ASIC design. You can see my projects and background in my resume.
-          </p>
-
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-        <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>        
-        </div>
-
-        <div class="text">My resume</div>
-      </button>
+            <p tabindex="0">Hey, I’m Zeynep. I’m a fourth-year Electrical and Electronics Engineering student at Bilkent University in Turkey. I ranked 71st out of 3 million people on university entrance exam, and I study here on a full scholarship.</p><br />
+            <p tabindex="0">I love working on <b>VLSI and hardware design</b> for acceleration.</p><br />
+            <p tabindex="0">Currently, I’m an undergraduate researcher in Alkan Lab, focusing on hardware-software co-optimization and ASIC design. You can see my projects and background in my resume.</p>
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+              <svg viewBox="0 0 640 512"><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" /></svg>        
+              </div>
+              <div class="text">My resume</div>
+            </button>
           </div>
-
-           <div class="dp" data-aos="fade-up">
+          <div class="dp" data-aos="fade-up">
             <img src="src/webp/zeynep1.webp" alt="Zeynep Akcil" tabindex="0" aria-label="image of zeynep" />
           </div>
         </div>
       </div>
-      
     </section>
-    <!-- about section ends  -->
-
-<!--     <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div> -->
-    <!-- …after your AboutMe section ends… -->
-
     <!-- ===== SKILLS SECTION ===== -->
     <section class="skills-section-container" id="skills" data-aos="fade-up">
-      <!-- Section heading (reuses your existing styles) -->
+      <!-- Section heading -->
       <div class="section-heading" data-aos="fade-up">
         <h2
           class="section-heading-article"
@@ -304,7 +224,7 @@
         <p class="sectionHeadingP"></p>
       </div>
 
-      <!-- Inner grid container: fixed-width and centered -->
+      <!-- Grid container -->
       <div
         style="
           max-width: 1000px;
@@ -345,7 +265,7 @@
           data-aos-delay="150"
         >
           <p style="color: #e0e0e0; font-size: 1rem; margin: 0;">
-            VLSI &amp; ASIC Design
+            VLSI & ASIC Design
           </p>
         </div>
 
@@ -430,7 +350,7 @@
           data-aos-delay="400"
         >
           <p style="color: #e0e0e0; font-size: 1rem; margin: 0;">
-            Git &amp; GitHub
+            Git & GitHub
           </p>
         </div>
 
@@ -484,6 +404,7 @@
             HW/SW Co-Design
           </p>
         </div>
+      </div>
     </section>
     <!-- ===== END SKILLS SECTION ===== -->
 
@@ -491,7 +412,11 @@
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+          <h2
+            class="section-heading-article"
+            tabindex="0"
+            aria-label="My projects starts from here"
+          >
             &#60;/Projects&#62;
           </h2>
           <p class="sectionHeadingP"></p>
@@ -500,16 +425,31 @@
           <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
-                <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
+                <img
+                  src="src/webp/pexelicon-favicon.webp"
+                  alt="pexelicon website favicon"
+                  class="faviconforProject"
+                />
                 <article class="ProjectHeading">Pexelicons</article>
                 <p class="ProjectDescription">
-                  Pexelicons: A world of personalized file folder icons to transform your PC into a reflection of your style.
+                  Pexelicons: A world of personalized file folder icons to
+                  transform your PC into a reflection of your style.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://github.com/vinodjangid07/Pexelicons" target="_blank" class="github-redirect" aria-label="Visit Pexelicons on GitHub">
+                  <a
+                    href="https://github.com/vinodjangid07/Pexelicons"
+                    target="_blank"
+                    class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub"
+                  >
                     <img src="src/svg/github.svg" alt="github redirect button" />
                   </a>
-                  <a href="https://vinodjangid07.github.io/Pexelicons/" target="_blank" class="cta" aria-label="Visit Pexelicons Live">
+                  <a
+                    href="https://vinodjangid07.github.io/Pexelicons/"
+                    target="_blank"
+                    class="cta"
+                    aria-label="Visit Pexelicons Live"
+                  >
                     <span>Live view</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                       <path d="M1,5 L11,5"></path>
@@ -519,7 +459,10 @@
                 </div>
               </div>
               <div class="image-div">
-                <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
+                <img
+                  src="src/webp/Group 76.webp"
+                  alt="Pexelicon website preview image"
+                />
               </div>
             </div>
           </div>
@@ -572,7 +515,9 @@
           </div>
     </section>
     <!-- skills section ends -->
- -->  </main>
+ -->  
+  
+  </main>
   <!-- main ends here -->
 
   <footer id="footer">
