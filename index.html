@@ -307,63 +307,67 @@
       </div>
     </section>
 <!-- ===== EXPERIENCES SECTION ===== -->
+<!-- ===== EXPERIENCES SECTION ===== -->
 <section class="experiences-section-container" id="experiences" data-aos="fade-up">
-  <!-- Section heading (same style as Projects/About) -->
-  <div class="section-heading" data-aos="fade-up" style="display: block; width: 100%;">
-    <h2
-      class="section-heading-article"
-      tabindex="0"
-      aria-label="My experiences starts from here"
-      style="color: #ffffff;"
-    >
-      Experiences
-    </h2>
-    <p class="sectionHeadingP"></p>
-  </div>
+  <div class="experiences-section-div">
+    <!-- 1) Section Heading (identical to Projects/About) -->
+    <div class="section-heading" data-aos="fade-up">
+      <h2
+        class="section-heading-article"
+        tabindex="0"
+        aria-label="My experiences starts from here"
+      >
+        Experiences
+      </h2>
+      <p class="sectionHeadingP"></p>
+    </div>
 
-  <!-- Wrap everything in a centered div (same pattern as .projects-section-div) -->
-  <div
-    class="experiences-section-div"
-    style="max-width: 1000px; margin: 0 auto; margin-top: 24px; position: relative;"
-    data-aos="fade-up"
-    data-aos-delay="100"
-  >
-    <!-- LEFT COLUMN: the vertical line + dots -->
+    <!-- 2) Content Grid: 60px column (timeline) + remaining space (details) -->
     <div
       style="
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background-color: #444;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 24px;
+        margin-top: 24px;
+        position: relative;
       "
-    ></div>
-
-    <!-- RIGHT COLUMN: place details offset to the right of the line -->
-    <div style="padding-left: 120px;">
-      <!-- Entry 1: High School -->
-      <div style="margin-bottom: 60px; position: relative;">
-        <!-- Dot -->
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <!-- LEFT COLUMN: Timeline container (60px wide) -->
+      <div style="position: relative; width: 60px; height: 480px;">
+        <!-- Vertical line (centered at 30px) -->
         <div
           style="
             position: absolute;
-            left: -120px;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #444;
+          "
+        ></div>
+
+        <!-- Dot 1: High School -->
+        <div
+          style="
+            position: absolute;
+            left: 30px;
             top: 2px;
             width: 16px;
             height: 16px;
             background-color: #6C63FF;
             border-radius: 50%;
+            transform: translateX(-50%);
           "
           data-aos="fade-up"
           data-aos-delay="150"
         ></div>
-        <!-- Date label -->
+        <!-- Label 1 -->
         <div
           style="
             position: absolute;
-            left: -280px;
+            left: 60px;
             top: -2px;
             font-size: 0.95rem;
             color: #bbb;
@@ -372,40 +376,28 @@
         >
           Sep 2017 – Jun 2021
         </div>
-        <!-- Details -->
-        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
-          Huseyin Avni Sozen Anatolian Highschool
-        </article>
-        <p class="ProjectDescription" style="margin: 0 0 4px;">
-          Istanbul, Turkiye — Sep 2017 – Jun 2021
-        </p>
-        <p class="ProjectDescription" style="margin: 0;">
-          Graduated with a GPA of 99/100.
-        </p>
-      </div>
 
-      <!-- Entry 2: University -->
-      <div style="margin-bottom: 60px; position: relative;">
-        <!-- Dot -->
+        <!-- Dot 2: University -->
         <div
           style="
             position: absolute;
-            left: -120px;
-            top: 2px;
+            left: 30px;
+            top: 120px;
             width: 16px;
             height: 16px;
             background-color: #6C63FF;
             border-radius: 50%;
+            transform: translateX(-50%);
           "
           data-aos="fade-up"
           data-aos-delay="200"
         ></div>
-        <!-- Date label -->
+        <!-- Label 2 -->
         <div
           style="
             position: absolute;
-            left: -260px;
-            top: -2px;
+            left: 60px;
+            top: 116px;
             font-size: 0.95rem;
             color: #bbb;
             white-space: nowrap;
@@ -413,40 +405,28 @@
         >
           Sep 2021 – Present
         </div>
-        <!-- Details -->
-        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
-          Bilkent University
-        </article>
-        <p class="ProjectDescription" style="margin: 0 0 4px;">
-          Electrical Electronics Engineering, Full-Scholarship — Sep 2021 – Present
-        </p>
-        <p class="ProjectDescription" style="margin: 0;">
-          Maintaining a 3.57 CGPA while specializing in VLSI, ASIC Design, and Hardware-Software Co-Optimization.
-        </p>
-      </div>
 
-      <!-- Entry 3: ETH Zurich Internship -->
-      <div style="margin-bottom: 60px; position: relative;">
-        <!-- Dot -->
+        <!-- Dot 3: ETH Zurich Internship -->
         <div
           style="
             position: absolute;
-            left: -120px;
-            top: 2px;
+            left: 30px;
+            top: 240px;
             width: 16px;
             height: 16px;
             background-color: #6C63FF;
             border-radius: 50%;
+            transform: translateX(-50%);
           "
           data-aos="fade-up"
           data-aos-delay="250"
         ></div>
-        <!-- Date label -->
+        <!-- Label 3 -->
         <div
           style="
             position: absolute;
-            left: -260px;
-            top: -2px;
+            left: 60px;
+            top: 236px;
             font-size: 0.95rem;
             color: #bbb;
             white-space: nowrap;
@@ -454,42 +434,28 @@
         >
           Jun 2024 – Oct 2024
         </div>
-        <!-- Details -->
-        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
-          ETH Zurich, Integrated Systems Laboratory
-        </article>
-        <p class="ProjectDescription" style="margin: 0 0 4px;">
-          Undergraduate Researcher &amp; Intern — Jun 2024 – Oct 2024
-        </p>
-        <p class="ProjectDescription" style="margin: 0;">
-          Compared multimodal Convolutional Neural Networks vs. Vision Transformers for accuracy and memory on a RISC-V-based chip.
-          <br />
-          Supervised by Prof. Luca Benini &amp; Viviane Potocnik.
-        </p>
-      </div>
 
-      <!-- Entry 4: Alkan Lab Volunteering -->
-      <div style="margin-bottom: 20px; position: relative;">
-        <!-- Dot -->
+        <!-- Dot 4: Alkan Lab Volunteering -->
         <div
           style="
             position: absolute;
-            left: -120px;
-            top: 2px;
+            left: 30px;
+            top: 360px;
             width: 16px;
             height: 16px;
             background-color: #6C63FF;
             border-radius: 50%;
+            transform: translateX(-50%);
           "
           data-aos="fade-up"
           data-aos-delay="300"
         ></div>
-        <!-- Date label -->
+        <!-- Label 4 -->
         <div
           style="
             position: absolute;
-            left: -260px;
-            top: -2px;
+            left: 60px;
+            top: 356px;
             font-size: 0.95rem;
             color: #bbb;
             white-space: nowrap;
@@ -497,16 +463,63 @@
         >
           Oct 2024 – Present
         </div>
-        <!-- Details -->
-        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
-          Alkan Lab, Bioinformatics &amp; Computational Genomics
-        </article>
-        <p class="ProjectDescription" style="margin: 0 0 4px;">
-          Volunteering Student — Oct 2024 – Present
-        </p>
-        <p class="ProjectDescription" style="margin: 0;">
-          Working on POACA (Partial Order Alignment Computational Acceleration): hardware-software co-optimization and ASIC design for bioinformatics under Prof. Can Alkan, Berkan Şahin, and Zulal Bingöl.
-        </p>
+      </div>
+
+      <!-- RIGHT COLUMN: Details (offset by 60px from left) -->
+      <div style="color: #e0e0e0; padding-left: 0;">
+        <!-- Experience 1: High School -->
+        <div style="margin-bottom: 60px; position: relative;" data-aos="fade-up" data-aos-delay="350">
+          <article class="ProjectHeading" style="font-size: 1.25rem; margin-bottom: 4px;">
+            Huseyin Avni Sozen Anatolian Highschool
+          </article>
+          <p class="ProjectDescription" style="margin: 0 0 4px; color: #bbb; font-size: 0.95rem;">
+            Istanbul, Turkiye — Sep 2017 – Jun 2021
+          </p>
+          <p class="ProjectDescription" style="margin: 0; font-size: 0.95rem;">
+            Graduated with a GPA of 99/100.
+          </p>
+        </div>
+
+        <!-- Experience 2: University -->
+        <div style="margin-bottom: 60px; position: relative;" data-aos="fade-up" data-aos-delay="400">
+          <article class="ProjectHeading" style="font-size: 1.25rem; margin-bottom: 4px;">
+            Bilkent University
+          </article>
+          <p class="ProjectDescription" style="margin: 0 0 4px; color: #bbb; font-size: 0.95rem;">
+            Electrical Electronics Engineering, Full-Scholarship — Sep 2021 – Present
+          </p>
+          <p class="ProjectDescription" style="margin: 0; font-size: 0.95rem;">
+            Maintaining a 3.57 CGPA while specializing in VLSI, ASIC Design, and Hardware-Software Co-Optimization.
+          </p>
+        </div>
+
+        <!-- Experience 3: ETH Zurich Internship -->
+        <div style="margin-bottom: 60px; position: relative;" data-aos="fade-up" data-aos-delay="450">
+          <article class="ProjectHeading" style="font-size: 1.25rem; margin-bottom: 4px;">
+            ETH Zurich, Integrated Systems Laboratory
+          </article>
+          <p class="ProjectDescription" style="margin: 0 0 4px; color: #bbb; font-size: 0.95rem;">
+            Undergraduate Researcher &amp; Intern — Jun 2024 – Oct 2024
+          </p>
+          <p class="ProjectDescription" style="margin: 0; font-size: 0.95rem;">
+            Compared multimodal Convolutional Neural Networks vs. Vision Transformers for accuracy and memory on a RISC-V-based chip.
+            <br />
+            Supervised by Prof. Luca Benini &amp; Viviane Potocnik.
+          </p>
+        </div>
+
+        <!-- Experience 4: Alkan Lab Volunteering -->
+        <div style="margin-bottom: 20px; position: relative;" data-aos="fade-up" data-aos-delay="500">
+          <article class="ProjectHeading" style="font-size: 1.25rem; margin-bottom: 4px;">
+            Alkan Lab, Bioinformatics &amp; Computational Genomics
+          </article>
+          <p class="ProjectDescription" style="margin: 0 0 4px; color: #bbb; font-size: 0.95rem;">
+            Volunteering Student — Oct 2024 – Present
+          </p>
+          <p class="ProjectDescription" style="margin: 0; font-size: 0.95rem;">
+            Working on POACA (Partial Order Alignment Computational Acceleration): hardware-software co-optimization and ASIC design for bioinformatics under Prof. Can Alkan, Berkan Şahin, and Zulal Bingöl.
+          </p>
+        </div>
       </div>
     </div>
   </div>
