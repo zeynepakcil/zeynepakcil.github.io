@@ -306,215 +306,212 @@
         </div>
       </div>
     </section>
+<!-- ===== EXPERIENCES SECTION ===== -->
 <section class="experiences-section-container" id="experiences" data-aos="fade-up">
-  <!-- Section heading -->
+  <!-- Section heading (same style as Projects/About) -->
   <div class="section-heading" data-aos="fade-up" style="display: block; width: 100%;">
-    <h2 class="section-heading-article" tabindex="0" aria-label="My experiences starts from here" style="color: #ffffff;">
+    <h2
+      class="section-heading-article"
+      tabindex="0"
+      aria-label="My experiences starts from here"
+      style="color: #ffffff;"
+    >
       Experiences
     </h2>
     <p class="sectionHeadingP"></p>
   </div>
 
-  <!-- Two-column grid: left for timeline dots, right for details -->
+  <!-- Wrap everything in a centered div (same pattern as .projects-section-div) -->
   <div
-    style="
-      max-width: 1000px;
-      margin: 0 auto;
-      margin-top: 24px;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 40px;
-      position: relative;
-    "
+    class="experiences-section-div"
+    style="max-width: 1000px; margin: 0 auto; margin-top: 24px; position: relative;"
     data-aos="fade-up"
     data-aos-delay="100"
   >
-    <!-- LEFT COLUMN: Timeline -->
-    <div style="position: relative; height: 480px;">
-      <!-- Vertical line -->
-      <div
-        style="
-          position: absolute;
-          left: 50%;
-          top: 10px;
-          bottom: 10px;
-          width: 2px;
-          background-color: #444;
-          transform: translateX(-50%);
-        "
-      ></div>
+    <!-- LEFT COLUMN: the vertical line + dots -->
+    <div
+      style="
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #444;
+      "
+    ></div>
 
-      <!-- Dot 1: High School (Sep 2017 – Jun 2021) -->
-      <div
-        style="
-          position: absolute;
-          top: 10px;
-          left: 50%;
-          width: 14px;
-          height: 14px;
-          background-color: #6C63FF;
-          border-radius: 50%;
-          transform: translateX(-50%);
-        "
-        data-aos="fade-up"
-        data-aos-delay="150"
-      ></div>
-      <span
-        style="
-          position: absolute;
-          top: 6px;
-          left: 60%;
-          font-size: 0.85rem;
-          color: #bbb;
-          white-space: nowrap;
-        "
-      >
-        Sep 2017 – Jun 2021
-      </span>
-
-      <!-- Dot 2: University (Sep 2021 – Present) -->
-      <div
-        style="
-          position: absolute;
-          top: 130px;
-          left: 50%;
-          width: 14px;
-          height: 14px;
-          background-color: #6C63FF;
-          border-radius: 50%;
-          transform: translateX(-50%);
-        "
-        data-aos="fade-up"
-        data-aos-delay="200"
-      ></div>
-      <span
-        style="
-          position: absolute;
-          top: 126px;
-          left: 60%;
-          font-size: 0.85rem;
-          color: #bbb;
-          white-space: nowrap;
-        "
-      >
-        Sep 2021 – Present
-      </span>
-
-      <!-- Dot 3: ETH Zurich (Jun 2024 – Oct 2024) -->
-      <div
-        style="
-          position: absolute;
-          top: 260px;
-          left: 50%;
-          width: 14px;
-          height: 14px;
-          background-color: #6C63FF;
-          border-radius: 50%;
-          transform: translateX(-50%);
-        "
-        data-aos="fade-up"
-        data-aos-delay="250"
-      ></div>
-      <span
-        style="
-          position: absolute;
-          top: 256px;
-          left: 60%;
-          font-size: 0.85rem;
-          color: #bbb;
-          white-space: nowrap;
-        "
-      >
-        Jun 2024 – Oct 2024
-      </span>
-
-      <!-- Dot 4: Alkan Lab (Oct 2024 – Present) -->
-      <div
-        style="
-          position: absolute;
-          top: 380px;
-          left: 50%;
-          width: 14px;
-          height: 14px;
-          background-color: #6C63FF;
-          border-radius: 50%;
-          transform: translateX(-50%);
-        "
-        data-aos="fade-up"
-        data-aos-delay="300"
-      ></div>
-      <span
-        style="
-          position: absolute;
-          top: 376px;
-          left: 60%;
-          font-size: 0.85rem;
-          color: #bbb;
-          white-space: nowrap;
-        "
-      >
-        Oct 2024 – Present
-      </span>
-    </div>
-
-    <!-- RIGHT COLUMN: Corresponding Details -->
-    <div style="color: #e0e0e0;">
-      <!-- Experience 1: High School -->
-      <div style="margin-bottom: 60px;" data-aos="fade-up" data-aos-delay="350">
-        <h3 style="color: #ffffff; font-size: 1.1rem; margin: 0;">
+    <!-- RIGHT COLUMN: place details offset to the right of the line -->
+    <div style="padding-left: 120px;">
+      <!-- Entry 1: High School -->
+      <div style="margin-bottom: 60px; position: relative;">
+        <!-- Dot -->
+        <div
+          style="
+            position: absolute;
+            left: -120px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #6C63FF;
+            border-radius: 50%;
+          "
+          data-aos="fade-up"
+          data-aos-delay="150"
+        ></div>
+        <!-- Date label -->
+        <div
+          style="
+            position: absolute;
+            left: -280px;
+            top: -2px;
+            font-size: 0.95rem;
+            color: #bbb;
+            white-space: nowrap;
+          "
+        >
+          Sep 2017 – Jun 2021
+        </div>
+        <!-- Details -->
+        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
           Huseyin Avni Sozen Anatolian Highschool
-        </h3>
-        <p style="color: #bbb; font-size: 0.9rem; margin: 4px 0;">
+        </article>
+        <p class="ProjectDescription" style="margin: 0 0 4px;">
           Istanbul, Turkiye — Sep 2017 – Jun 2021
         </p>
-        <p style="margin: 0;">
-          Graduated with a GPA of 99/100. :contentReference[oaicite:9]{index=9}
+        <p class="ProjectDescription" style="margin: 0;">
+          Graduated with a GPA of 99/100.
         </p>
       </div>
 
-      <!-- Experience 2: University -->
-      <div style="margin-bottom: 60px;" data-aos="fade-up" data-aos-delay="400">
-        <h3 style="color: #ffffff; font-size: 1.1rem; margin: 0;">
+      <!-- Entry 2: University -->
+      <div style="margin-bottom: 60px; position: relative;">
+        <!-- Dot -->
+        <div
+          style="
+            position: absolute;
+            left: -120px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #6C63FF;
+            border-radius: 50%;
+          "
+          data-aos="fade-up"
+          data-aos-delay="200"
+        ></div>
+        <!-- Date label -->
+        <div
+          style="
+            position: absolute;
+            left: -260px;
+            top: -2px;
+            font-size: 0.95rem;
+            color: #bbb;
+            white-space: nowrap;
+          "
+        >
+          Sep 2021 – Present
+        </div>
+        <!-- Details -->
+        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
           Bilkent University
-        </h3>
-        <p style="color: #bbb; font-size: 0.9rem; margin: 4px 0;">
-          Electrical Electronics Engineering, Full‐Scholarship — Sep 2021 – Present
+        </article>
+        <p class="ProjectDescription" style="margin: 0 0 4px;">
+          Electrical Electronics Engineering, Full-Scholarship — Sep 2021 – Present
         </p>
-        <p style="margin: 0;">
-          Maintaining a 3.57 CGPA while specializing in VLSI, ASIC Design, and Hardware-Software Co-Optimization. :contentReference[oaicite:10]{index=10}
+        <p class="ProjectDescription" style="margin: 0;">
+          Maintaining a 3.57 CGPA while specializing in VLSI, ASIC Design, and Hardware-Software Co-Optimization.
         </p>
       </div>
 
-      <!-- Experience 3: ETH Zurich Internship -->
-      <div style="margin-bottom: 60px;" data-aos="fade-up" data-aos-delay="450">
-        <h3 style="color: #ffffff; font-size: 1.1rem; margin: 0;">
+      <!-- Entry 3: ETH Zurich Internship -->
+      <div style="margin-bottom: 60px; position: relative;">
+        <!-- Dot -->
+        <div
+          style="
+            position: absolute;
+            left: -120px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #6C63FF;
+            border-radius: 50%;
+          "
+          data-aos="fade-up"
+          data-aos-delay="250"
+        ></div>
+        <!-- Date label -->
+        <div
+          style="
+            position: absolute;
+            left: -260px;
+            top: -2px;
+            font-size: 0.95rem;
+            color: #bbb;
+            white-space: nowrap;
+          "
+        >
+          Jun 2024 – Oct 2024
+        </div>
+        <!-- Details -->
+        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
           ETH Zurich, Integrated Systems Laboratory
-        </h3>
-        <p style="color: #bbb; font-size: 0.9rem; margin: 4px 0;">
+        </article>
+        <p class="ProjectDescription" style="margin: 0 0 4px;">
           Undergraduate Researcher &amp; Intern — Jun 2024 – Oct 2024
         </p>
-        <p style="margin: 0;">
-          Compared multimodal Convolutional Neural Networks vs. Vision Transformers for accuracy and memory consumption on a RISC-V-based chip. :contentReference[oaicite:11]{index=11}
+        <p class="ProjectDescription" style="margin: 0;">
+          Compared multimodal Convolutional Neural Networks vs. Vision Transformers for accuracy and memory on a RISC-V-based chip.
           <br />
           Supervised by Prof. Luca Benini &amp; Viviane Potocnik.
         </p>
       </div>
 
-      <!-- Experience 4: Alkan Lab Volunteering -->
-      <div style="margin-bottom: 20px;" data-aos="fade-up" data-aos-delay="500">
-        <h3 style="color: #ffffff; font-size: 1.1rem; margin: 0;">
+      <!-- Entry 4: Alkan Lab Volunteering -->
+      <div style="margin-bottom: 20px; position: relative;">
+        <!-- Dot -->
+        <div
+          style="
+            position: absolute;
+            left: -120px;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #6C63FF;
+            border-radius: 50%;
+          "
+          data-aos="fade-up"
+          data-aos-delay="300"
+        ></div>
+        <!-- Date label -->
+        <div
+          style="
+            position: absolute;
+            left: -260px;
+            top: -2px;
+            font-size: 0.95rem;
+            color: #bbb;
+            white-space: nowrap;
+          "
+        >
+          Oct 2024 – Present
+        </div>
+        <!-- Details -->
+        <article class="ProjectHeading" style="font-size: 1.15rem; margin-bottom: 4px;">
           Alkan Lab, Bioinformatics &amp; Computational Genomics
-        </h3>
-        <p style="color: #bbb; font-size: 0.9rem; margin: 4px 0;">
+        </article>
+        <p class="ProjectDescription" style="margin: 0 0 4px;">
           Volunteering Student — Oct 2024 – Present
         </p>
-        <p style="margin: 0;">
-          Working on POACA (Partial Order Alignment Computational Acceleration): hardware‐software co‐optimization and ASIC design for bioinformatics under Prof. Can Alkan, Berkan Şahin, and Zulal Bingöl. :contentReference[oaicite:12]{index=12}
+        <p class="ProjectDescription" style="margin: 0;">
+          Working on POACA (Partial Order Alignment Computational Acceleration): hardware-software co-optimization and ASIC design for bioinformatics under Prof. Can Alkan, Berkan Şahin, and Zulal Bingöl.
         </p>
       </div>
     </div>
   </div>
 </section>
+<!-- ===== END EXPERIENCES SECTION ===== -->
 *************************************************
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
