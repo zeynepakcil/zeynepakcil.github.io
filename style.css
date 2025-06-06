@@ -2131,4 +2131,12 @@ footer {
 }
 
 /* ──────────────────────────────────────────────────────────────────────────── END TIMELINE STYLES */
+/* somewhere in style.css, after your original timeline rules */
+.education-section-container .timeline .container {
+  width: 75%;        /* make each box 75% wide */
+}
+.education-section-container .timeline .container.right {
+  left: 25%;         /* push right‐side cards over by 25% */
+}
+
 
