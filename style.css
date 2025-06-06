@@ -2017,3 +2017,116 @@ footer {
         margin-top: 100px;  
     }
 }
+
+
+
+/* 1) The wrapper that holds all timeline entries */
+.timeline {
+  position: relative;
+  max-width: 1000px;         /* matches your other sections’ container width */
+  margin: 0 auto;            /* center on page */
+  padding: 40px 0;           /* some vertical breathing room */
+}
+
+/* 2) The vertical line in the center of .timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 50%;                 /* exactly halfway across the wrapper */
+  top: 0;
+  bottom: 0;
+  width: 2px;                /* medium‐thickness grey line */
+  background-color: #444;    /* same grey tone used elsewhere */
+  transform: translateX(-50%); /* shift half its own width so it is truly centered */
+}
+
+/* 3) Each timeline “container” (one entry) takes up 50% width */
+.timeline .container {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;        /* padding inside each entry box */
+  box-sizing: border-box;
+}
+
+/* 4) Left‐side entries sit flush on the left half */
+.timeline .container.left {
+  left: 0;
+}
+
+/* 5) Right‐side entries start at 50% (right half) */
+.timeline .container.right {
+  left: 50%;
+}
+
+/* 6) The purple “dot” for each entry—positioned on the vertical line */
+.timeline .container::before {
+  content: "";
+  position: absolute;
+  top: 20px;                 /* roughly 20px down from the top of the content box */
+  right: -10px;              /* for left‐side: push 10px into the vertical line */
+  width: 20px;
+  height: 20px;
+  background-color: #6C63FF; /* your signature purple */
+  border: 3px solid white;   /* white border around dot for contrast */
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* 7) For right‐side entries, move the dot to the left of the box */
+.timeline .container.right::before {
+  left: -10px;               /* place 10px to the left of the right‐side container */
+  right: auto;               /* unset the “right” property */
+}
+
+/* 8) The “content” card for each entry (dark background, light text) */
+.timeline .container .content {
+  background-color: #171728; /* dark‐mode card background */
+  color: #e0e0e0;            /* light grey text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+/* 9) Little triangle pointer so each card “points” at its dot */
+.timeline .container.left .content::after {
+  content: "";
+  position: absolute;
+  top: 24px;                 /* around mid‐height of the content box */
+  right: -8px;               /* place just outside the right edge */
+  border-width: 8px 0 8px 8px;   /* triangle pointing left */
+  border-style: solid;
+  border-color: transparent transparent transparent #171728;
+}
+
+.timeline .container.right .content::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -8px;                /* place just outside the left edge */
+  border-width: 8px 8px 8px 0;   /* triangle pointing right */
+  border-style: solid;
+  border-color: transparent #171728 transparent transparent;
+}
+
+/* 10) RESPONSIVE: On narrow screens, stack everything full‐width */
+@media screen and (max-width: 768px) {
+  .timeline .container {
+    width: 100%;
+    padding-left: 60px;      /* leave room for the dot on the left */
+    padding-right: 25px;
+  }
+  .timeline .container.right,
+  .timeline .container.left {
+    left: 0;                 /* both left & right go full‐width */
+  }
+  .timeline .container::before {
+    top: 15px;
+    left: 15px;              /* place the dot 15px from the left edge */
+    right: auto;
+  }
+  .timeline .container .content::after {
+    display: none;           /* remove the little triangle on mobile */
+  }
+}
+/* ──────────────────────────────────────────────────────────────────────────── END TIMELINE STYLES */
