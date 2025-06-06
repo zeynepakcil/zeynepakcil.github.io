@@ -2131,9 +2131,4 @@ footer {
 }
 
 /* ──────────────────────────────────────────────────────────────────────────── END TIMELINE STYLES */
-.timeline .container .content h2 {
-  font-size: 2rem;       /* smaller than 2.4rem, but still larger than before */
-}
-.timeline .container .content p {
-  font-size: 1.4rem;     /* smaller than 1.6rem */
-}
+
