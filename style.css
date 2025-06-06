@@ -2129,65 +2129,11 @@ footer {
     display: none;           /* remove the little triangle on mobile */
   }
 }
-/* ───────────────────────────────────────────────────────────────────────────
-   1) Bigger text inside each timeline “bubble”
-   ─────────────────────────────────────────────────────────────────────────── */
-.timeline .container .content h2 {
-  /* Make the year/header text bigger */
-  font-size: 2.4rem;      /* adjust as desired */
-  color: rgba(255, 255, 255, 0.95); /* nearly opaque white */
-  margin-bottom: 0.4rem;
-}
-
-.timeline .container .content p {
-  /* Make the paragraph text bigger */
-  font-size: 1.6rem;      /* adjust as desired */
-  line-height: 1.4;       /* comfortable line spacing */
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* ───────────────────────────────────────────────────────────────────────────
-   2) Fade‐out (reduce alpha) + shrink font on “lower” entries
-   ─────────────────────────────────────────────────────────────────────────── */
-
-/* 
-   If you have multiple <div class="container left"> / <div class="container right">
-   you can target them by their order. In this example, the second .container
-   is faded + slightly smaller. Adjust the nth‐child index if you add more entries.
-*/
-.timeline .container:nth-child(2) .content {
-  opacity: 0.70;           /* 70% opacity (more “faded”) */
-  transform: scale(0.93);  /* shrink to 93% size */
-}
-
-/* 
-   If you wish to continue this “fade + shrink” pattern for further entries,
-   you can iterate. For example, make the third entry even lighter:
-*/
-.timeline .container:nth-child(3) .content {
-  opacity: 0.50;
-  transform: scale(0.88);
-}
-
-/* ───────────────────────────────────────────────────────────────────────────
-   3) Ensure the “bubble” backgrounds still look crisp when opacity changes
-   ─────────────────────────────────────────────────────────────────────────── */
-.timeline .container .content {
-  background-color: rgba(20, 20, 35, 0.95); /* keep a solid dark background */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* ───────────────────────────────────────────────────────────────────────────
-   4) (Optional) Increase spacing between timeline entries 
-   ─────────────────────────────────────────────────────────────────────────── */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline .container {
-  margin-bottom: 4rem; /* add extra vertical breathing room */
-}
 
 /* ──────────────────────────────────────────────────────────────────────────── END TIMELINE STYLES */
+.timeline .container .content h2 {
+  font-size: 2rem;       /* smaller than 2.4rem, but still larger than before */
+}
+.timeline .container .content p {
+  font-size: 1.4rem;     /* smaller than 1.6rem */
+}
